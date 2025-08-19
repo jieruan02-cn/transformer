@@ -1,4 +1,79 @@
-venv
-.*
+# ========================= 
+# General
+# =========================
+# Ignore Python cache/compield files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.so
 
+# Ignore virtural enviroments
+.venv/
+venv/
+env/
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore system files
+.DS_Store
+Thumb.db
+
+# =========================
+# Python / ML Experimentation
+# =========================
+# Logs
+logs/
+*.log
+wandb/
+mlruns/
+lightnight_logs/
+
+# Checkpoints and model outputs
+checkpoints/
+*.ckpt
+*.pth
+*.pt
+*.h5
+*.onnx
+
+# Training results
+results/
+output/
+runs/
+experiments/**/*.log
+experiments/**/*.out
+experiments/**/checkpoints/
+experiments/**/tmp/
+
+# =========================
+# Data
+# =========================
+# Large raw data files
+data/
+datasets/
+*.csv
+*.tsv
+*.json
+*.parquet
+*.npy
+*.npz
+*.hdf5
+
+# =========================
+# IDE / Editor configs
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# =========================
+# Git-specific
+# =========================
+# Ignore al hidden files except .gitignore
+.*
 !.gitignore
+!.gitattributes
+!.github/
